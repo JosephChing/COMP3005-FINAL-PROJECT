@@ -210,7 +210,7 @@ class Query():
         retList = []
         
         for order in orderList:
-            print(f"orderid--->{order['order_id']}")
+            #print(f"orderid--->{order['order_id']}")
             sql = f"""
             SELECT o.order_id, oc.quantity,b.price, b.pub_royalties, b.publisher
             FROM orders as o
