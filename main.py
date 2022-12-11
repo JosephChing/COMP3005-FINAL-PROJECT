@@ -125,7 +125,7 @@ def adminReport():
     except:
         ordersavg = 0
 
-    print(f" length of publist = {len(pubpaymentsList)} pub payments ---> {pubpaymentsList}")    
+   # print(f" length of publist = {len(pubpaymentsList)} pub payments ---> {pubpaymentsList}")    
     # for x in range(0,len(pubpaymentsList),1):
     #     for j , pu(pubpaymentsList[x])
 
@@ -135,7 +135,7 @@ def adminReport():
     publishersAndPayments = {}
     for x in pubpaymentsList:
         for j in x:
-            print(j)
+            # print(j)
             # try:
             orderid = j[0]
             quantity = j[1]
@@ -145,7 +145,7 @@ def adminReport():
 
             payment = (price * royalties * quantity)
 
-            print(payment)
+            #print(payment)
             if publisher in publishersAndPayments.keys():
                 publishersAndPayments[publisher] = publishersAndPayments[publisher] + payment
             else:
@@ -154,7 +154,7 @@ def adminReport():
             # except:
             #     print("Error in admin report")
 
-    print(publishersAndPayments)
+    #print(publishersAndPayments)
     receiptString = f"""
 --------------------------
 BOOK STORE EARNINGS REPORT
